@@ -34,7 +34,7 @@ app.use('/api/listing', listingRouter);
 
 app.use(express.static(path.join(__dirname, '/real-estate/dist')));
 
-app.get('*', (req,res) => {
+app.get('ninad', (req,res) => {
     res.sendFile(path.join(__dirname, 'real-estate', 'dist', 'index.html'));
 })
 
